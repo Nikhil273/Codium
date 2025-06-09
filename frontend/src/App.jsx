@@ -20,7 +20,7 @@ const App = () => {
 
   async function reviewCode() {
     try {
-      const response = await axios.post('http://localhost:8080/ai/get-review', { code });
+      const response = await axios.post('https://codium-1avh.onrender.com/ai/get-review', { code });
       setReview(response.data);
       console.log(response.data);
     } catch (error) {
